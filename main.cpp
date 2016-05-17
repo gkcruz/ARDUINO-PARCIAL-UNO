@@ -1,51 +1,32 @@
 #include <iostream>
-#include <time.h>
-#include <stdlib.h> // random
-#include <stdio.h>
 
 using namespace std;
-
-int contador;
+/*ingresar un numero de hasta 4 cifras
+pero puede ingresar uno mayor.
+el programa debera escribir cuantas cifras
+tiene el numero */
 int numero;
-int suma,mayor,menor,con50,suma50,prom50;
+
 
 int main()
 {
-    srand(time(0)); // semilla, para que no genere el mismo numero aleatorio
-    contador=0;
-    suma=0;
-    mayor=0;
-    menor=100;
-    con50=0;
+    cout << "Ingresar Numero....:";
+    cin>>numero;
 
-    while(contador<10)
-    {
-    numero=1 + rand() % (100-1);
-    suma=suma +numero;
+    if(numero<0)
+        numero*=(-1);   // numero= numero * (-1)
 
-    if(mayor<numero)
-    {
-        mayor=numero;
-    }
-    if(menor>numero)
-    {
-        menor=numero;
-    }
-    if(numero>50)
-      {
-          con50++;
-          suma50+=numero;
-      }
+    if(numero<=9)
+        cout<<"Tiene una cifra";
 
-    contador++;
-     cout <<contador<< " Numero "<<numero<<"\n";
-    }
-    prom50=suma50/con50;
-     cout<<"la suma total es "<<suma<<"\n";
-     cout << "El numero mayor es "<<mayor<<"\n";
-     cout << "El numero menor es "<<menor<<"\n";
-     cout<<"Numeros mayores a 50 "<<con50<<"\n";
-     cout<<" Promedio numeros mayores a 50 "<<prom50<<"\n";
-    cout << "Final del programa "<<"\n";
+    else if(numero<=99)
+        cout<<"Tiene Dos cifra";
+
+    else if(numero<=999)
+        cout<<"Tiene tres cifra";
+
+        else
+        cout<<"Tiene cuatro o mas de cuatro cifras";
+
 
 }
