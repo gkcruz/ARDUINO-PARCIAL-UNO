@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1461711434 source:d:\documentos\unitec 2016\q2\programacion de sistemas\numero mayor\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+
