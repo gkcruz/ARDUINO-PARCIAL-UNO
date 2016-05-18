@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1462315097 source:d:\documentos\unitec 2016\q2\programacion de sistemas\numeros pares e impares\main.cpp
+	<iostream>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+
